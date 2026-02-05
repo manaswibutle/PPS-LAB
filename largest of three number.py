@@ -1,6 +1,13 @@
-#write your code here...
 a = int(input())
 b = int(input())
 c = int(input())
-largest = max(a, b, c)
+
+if a >= b and a >= c:
+    largest = a
+elif b >= a and b >= c:
+    largest = b
+else:
+    largest = c
+
 print(largest)
+
